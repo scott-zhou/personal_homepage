@@ -1,11 +1,23 @@
 <% provide(:title, "") %>
-<div class="center jumbotron">
-  <h1>Scott Zhou</h1>
-  <h2>
-  This is Scott Zhou's home page.
-  </h2>
-  <p>
+<div class="jumbotron">
+<div class="row">
+    <div class="col-xs-12"><p>Scott Zhou's personal homepage</p></div>
+  <div class="col-xs-7"><h2>
+Basic informations<br>
+Tel<br>
+address<br>
+email<br>
+etc.</h2></div>
+  <div class="col-xs-5">
+    <%= image_tag("scott.jpg",class:"img-rounded", alt:"My Photo") %>
+  </div>
+  <div class="col-xs-12"><h4>Some introduction texts</h4></div>
+  <div class="col-xs-12"><h5>work experience</h5></div>
+  <div class="col-xs-12"><h6>project experience</h6></div>
+  <div class="col-xs-12"><p>
   Scott Zhou
   scott.cong.zhou@gmail.com
-  </p>
+  </p></div>
+</div>
+  
 </div>
