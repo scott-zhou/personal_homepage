@@ -1,13 +1,13 @@
 <footer class="footer">
   <small>
     The Personal Homepage
-    by <a href="http://www.scottzhou.me">Scott Zhou</a>
+    by <a href="mailto:<%= my_email %>"><%= my_name %></a>
   </small>
   <nav>
     <ul>
       <li><%= link_to "About",   about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="https://github.com/scott-zhou/">Github</a></li>
+      <li><a href=<%= my_github_homepage %>>Github</a></li>
     </ul>
   </nav>
 </footer>

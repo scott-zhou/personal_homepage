@@ -1,23 +1,22 @@
 <% provide(:title, "") %>
 <div class="jumbotron">
-<div class="row">
-    <div class="col-xs-12"><p>Scott Zhou's personal homepage</p></div>
-  <div class="col-xs-7"><h2>
-Basic informations<br>
-Tel<br>
-address<br>
-email<br>
-etc.</h2></div>
-  <div class="col-xs-5">
-    <%= image_tag("scott.jpg",class:"img-rounded", alt:"My Photo") %>
-  </div>
-  <div class="col-xs-12"><h4>Some introduction texts</h4></div>
-  <div class="col-xs-12"><h5>work experience</h5></div>
-  <div class="col-xs-12"><h6>project experience</h6></div>
-  <div class="col-xs-12"><p>
-  Scott Zhou
-  scott.cong.zhou@gmail.com
-  </p></div>
-</div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <%= image_tag("scott.jpg",class:"img-rounded", alt:"My Photo") %>
+    </div>
   
+    <div class="col-xs-12 col-sm-8">
+      <h2>Hello from <%= my_name %></h2>
+      <p>
+        Welcome to Scott Zhou's Home on web!<br>
+        You found your way here, you might stay a while. If you looks around this site you'll get to know a few of me.
+      </p>
+    </div>
+  
+    <div class="col-sm-12">
+      <h4>Some introduction texts</h4>
+      <h5>work experience</h5>
+    </div>
+    <div class="col-sm-12"><h6>project experience</h6></div>
+  </div>
 </div>

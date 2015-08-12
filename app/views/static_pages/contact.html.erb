@@ -1,8 +1,15 @@
 <% provide(:title, "Contact") %>
-<div class="center jumbotron">
-  <h1>Contact</h1>
+<div class="jumbotron">
+  
+  <address>
+  <strong><%= my_name %></strong><br>
+  <abbr title="Location">at:</abbr> <%= my_location %><br>
+  <abbr title="Phone">P:</abbr> <%= my_tel %><br>
+  <a href="mailto:<%= my_email %>"><%= my_email %></a>
+  </address>
+
   <p>
-  Scott Zhou
-  scott.cong.zhou@gmail.com
+  I speak <%= my_language %>.
   </p>
+
 </div>
