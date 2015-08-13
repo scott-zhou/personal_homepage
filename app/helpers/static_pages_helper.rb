@@ -3,6 +3,10 @@ module StaticPagesHelper
     'Scott Zhou'
   end
   
+  def my_full_name
+    'Scott Cong Zhou'
+  end
+  
   def my_birthday
     'October 1980'
   end
