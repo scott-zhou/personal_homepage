@@ -24,3 +24,8 @@
     </div>
   </div>
 </div>
+
+<%
+  record = Accessrecord.new(remote_ip: request.remote_ip)
+  record.save
+%>
