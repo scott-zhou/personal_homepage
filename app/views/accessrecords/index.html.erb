@@ -14,7 +14,7 @@
   <tbody>
     <% @accessrecords.each do |accessrecord| %>
       <tr>
-        <td><%= accessrecord.remote_ip %></td>
+        <td><%= link_to accessrecord.remote_ip, "http://www.iplocationtools.com/"+accessrecord.remote_ip+".html" %></td>
         <td><%= accessrecord.created_at %></td>
       </tr>
     <% end %>
