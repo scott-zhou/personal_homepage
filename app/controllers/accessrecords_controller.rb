@@ -5,6 +5,13 @@ class AccessrecordsController < ApplicationController
   # GET /accessrecords.json
   def index
     @accessrecords = Accessrecord.all
+    first_index = @accessrecords.first.id
+    last_del_index = @accessrecords.last.id - 10
+    do_del = @accessrecords.count > 10
+    if do_del
+      Accessrecord.delete((first_index..last_del_index).to_a)
+      @accessrecords = Accessrecord.all
+    end
   end
 
   # GET /accessrecords/1

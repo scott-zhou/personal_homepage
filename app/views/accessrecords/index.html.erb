@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1>To see how many peoples had visited my homepage</h1>
-<h3>Current counter number: <%= @accessrecords.count %></h3>
+<h3>Current counter number: <%= @accessrecords.last.id %> (Only keep the last 10 records)</h3>
 
 <table class="table">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Remote ip</th>
       <th colspan="3"></th>
     </tr>
@@ -14,6 +15,7 @@
   <tbody>
     <% @accessrecords.each do |accessrecord| %>
       <tr>
+        <td><%= accessrecord.id %></td>
         <td><%= link_to accessrecord.remote_ip, "http://www.iplocationtools.com/"+accessrecord.remote_ip+".html" %></td>
         <td><%= accessrecord.created_at %></td>
       </tr>
